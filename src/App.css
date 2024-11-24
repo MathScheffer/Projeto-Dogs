@@ -45,6 +45,9 @@ button, input{
   margin: 0px auto;
 }
 
+.mainContainer{
+  margin-top: 4rem;
+}
 .animeLeft {
   opacity: 0;
   transform: translateX(-20px);

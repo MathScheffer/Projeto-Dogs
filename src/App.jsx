@@ -6,6 +6,8 @@ import Home from './componentes/Home'
 import Login from './componentes/Login/Login'
 import NOT_FOUND from './componentes/NOT_FOUND'
 import { UserStorage } from './UserContext'
+import User from './componentes/User/User'
+import ProtectedRouter from './componentes/Helper/ProtectedRouter'
 
 function App() {
   return (
@@ -16,6 +18,14 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login/*" element={<Login />} />
+            <Route
+              path="conta/*"
+              element={
+                <ProtectedRouter>
+                  <User />
+                </ProtectedRouter>
+              }
+            />
             <Route path="/*" element={<NOT_FOUND />} />
           </Routes>
           <Footer />

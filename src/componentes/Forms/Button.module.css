@@ -19,8 +19,7 @@
 /**
 Classe será acionada quando o usuário fizer login, evitando que envie multiplas requisições
 */
-.button:disabled {
+.button:disabled  {
   opacity: 0.5;
   cursor: wait;
-
 }
